@@ -17,8 +17,6 @@ for f in text_fields:
 
 df['Alkoholi-%/Litrahinta'] = df['Alkoholi-%'] / df['Litrahinta']
 
-df.set_index('Nimi', inplace=True)
-
 df.to_csv('alko.csv', index=False)
 
 show(df)
